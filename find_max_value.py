@@ -6,4 +6,13 @@ def find_max_value(data: dict):
     Returns:
         int: The maximum value in the dictionary.
     """
-    return 
+    max_value = []
+    for i in data:
+        max_value.append(data[i])
+    return max(max_value)
+
+print(find_max_value(data  = {
+    'a' : -4, 
+    'b' : -10, 
+    'c' : 0
+  }))
